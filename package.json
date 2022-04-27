@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Tobia-Rossi/Snuff-Bot#readme",
   "dependencies": {
+    "@discordjs/rest": "^0.4.1",
     "discord.js": "^13.6.0"
   }
 }
