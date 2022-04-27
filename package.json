@@ -1,23 +1,28 @@
 {
   "name": "snuff_bot",
   "version": "1.0.0",
-  "description": "Bot della Bwisi",
+  "description": "Bot della bwisi",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "Bwisi"
-  ],
-  "author": "Tuoyo",
-  "license": "MIT",
-  "dependencies": {
-    "@discordjs/builders": "^0.12.0",
-    "@discordjs/rest": "^0.3.0",
-    "discord-api-types": "^0.29.0",
-    "discord.js": "^13.6.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tobia-Rossi/Snuff-Bot.git"
   },
-  "devDependencies": {
-    "eslint": "^8.11.0"
+  "keywords": [
+    "Brisa",
+    "Snuff",
+    "Merda",
+    "Pisa"
+  ],
+  "author": "Tobia Rossi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tobia-Rossi/Snuff-Bot/issues"
+  },
+  "homepage": "https://github.com/Tobia-Rossi/Snuff-Bot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0"
   }
 }
