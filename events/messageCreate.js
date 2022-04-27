@@ -1,3 +1,6 @@
+const fs = require("fs");
+const fileQuotes = "./Snuff_Database/snuff_quotes.txt";
+
 module.exports = {
 	name: 'messageCreate',
 	execute(message) {
@@ -13,7 +16,18 @@ module.exports = {
 		// Brisa Time code
 		if (message.content.search(/Virgil/i) == -1) {
 			if (message.content.search(/Che ora è/i) !== -1) {
-				message.reply('Brisa Time Baby!! <@&952285034977574932>');
+				if (message.author.username == 'Virgil') {
+					message.reply('Brisa Time Baby!! <@&952285034977574932>');
+				} else {
+					var data = fs.readFileSync(fileQuotes, 'utf8');
+
+					const quotes = data.split(/\r?\n/);
+					const quotesCount = quotes.length;
+					const randomQuoteNumber = Math.floor(Math.random() * quotesCount);
+					const randomQuote = quotes[randomQuoteNumber];
+
+					message.reply({ content: randomQuote + ' | Bris!', tts: false});
+				}
 			}
 		}
 	},
