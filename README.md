@@ -1,8 +1,18 @@
 <p>
 <a href="https://github.com/Tobia-Rossi/Snuff-Bot/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/Tobia-Rossi/Snuff-Bot"><a>
+</p>
+<p>
+Code infos:
 <a href="https://github.com/Tobia-Rossi/Snuff-Bot"><img src="https://img.shields.io/github/languages/top/Tobia-Rossi/Snuff-Bot"></a>
 <a href="https://github.com/Tobia-Rossi/Snuff-Bot"><img src="https://img.shields.io/github/languages/code-size/Tobia-Rossi/Snuff-Bot"></a>
+<img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/Tobia-Rossi/Snuff-Bot/discord.js">
+</p>
+<p>
+Reddit:
 <a href="https://www.reddit.com/user/Tobia-Rossi"><img src="https://img.shields.io/reddit/user-karma/combined/Tobia-Rossi?style=social"></a>
+</p>
+<p>
+Discord:
 <a href="https://discord.gg/GemxCWtKCX"><img src="https://img.shields.io/discord/921013923136811028"></a>
 </p>
 
