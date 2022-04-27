@@ -8,7 +8,7 @@ const client = new Client({ intents: [Intents.FLAGS.DIRECT_MESSAGES, Intents.FLA
 	Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
 	Intents.FLAGS.GUILD_MESSAGE_TYPING, Intents.FLAGS.GUILD_SCHEDULED_EVENTS,
 	Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILD_WEBHOOKS] });
-
+	
 client.commands = new Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
@@ -31,7 +31,7 @@ for (const file of eventFiles) {
 client.on('interactionCreate', async interaction => {
 	if (!interaction.isCommand()) return;
 	if (!interaction.channel.viewable) {
-		interaction.reply({ content: 'Cannot send in this channel, please use #bots-text', ephemeral: true });
+		interaction.reply({ content: 'Cannot send in this channel, please use a bot enabled channel.', ephemeral: true });
 		return;
 	}
 
