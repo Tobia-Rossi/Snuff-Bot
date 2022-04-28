@@ -1,5 +1,5 @@
 const fs = require("fs");
-const fileQuotes = "./Databris/snuff_quotes.txt";
+const fileQuotes = "./Databris/Databris.txt";
 
 module.exports = {
 	name: 'messageCreate',
