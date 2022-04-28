@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const fs = require("fs");
-const fileQuotes = "./Snuff_Database/snuff_quotes.txt";
+const fileQuotes = "./Databris/snuff_quotes.txt";
 
 module.exports = {
 	data: new SlashCommandBuilder()
