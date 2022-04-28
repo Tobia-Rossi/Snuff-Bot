@@ -26,7 +26,7 @@ module.exports = {
 				return interaction.reply({ content: randomQuote + ' | Bris!', tts: false });
 			}
 		} else {
-			return interaction.reply({content: 'Error Reading DataBris, Sorry!', ephemeral: true });
+			return interaction.reply({content: 'Error Reading Databris, Sorry!', ephemeral: true });
 		}
 	},
 };
