@@ -16,18 +16,21 @@ module.exports = {
 		// Brisa Time code
 		if (message.content.search(/Virgil/i) == -1) {
 			if (message.content.search(/Che ora è/i) !== -1) {
-				if (message.author.username == 'Virgil') {
-					message.reply('Brisa Time Baby!! <@&952285034977574932>');
-				} else {
-					var data = fs.readFileSync(fileQuotes, 'utf8');
-
-					const quotes = data.split(/\r?\n/);
-					const quotesCount = quotes.length;
-					const randomQuoteNumber = Math.floor(Math.random() * quotesCount);
-					const randomQuote = quotes[randomQuoteNumber];
-
-					message.reply({ content: randomQuote + ' | Bris!', tts: false});
+				if (message.author.id == '953408736343507034') {
+					message.reply('<@953408736343507034>... È l\'ora della Brisa, già lo sai!! <@&952285034977574932>');
 				}
+				
+				// TODO: add rect with xmass snuff
+				message.channel.reply('La frase della brisa del momento:');
+
+				var data = fs.readFileSync(fileQuotes, 'utf8');
+
+				const quotes = data.split(/\r?\n/);
+				const quotesCount = quotes.length;
+				const randomQuoteNumber = Math.floor(Math.random() * quotesCount);
+				const randomQuote = quotes[randomQuoteNumber];
+
+				message.channel.send({ content: randomQuote + ' | Bris!', tts: false});
 			}
 		}
 	},
