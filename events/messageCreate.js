@@ -21,7 +21,7 @@ module.exports = {
 				}
 				
 				// TODO: add rect with xmass snuff
-				message.channel.reply('La frase della brisa del momento:');
+				message.reply('La frase della brisa del momento:');
 
 				var data = fs.readFileSync(fileQuotes, 'utf8');
 
